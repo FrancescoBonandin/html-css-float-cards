@@ -10,6 +10,97 @@
 
 /*--GENERAL--*/
 
+*{
+    font-family: 'Fredoka', sans-serif;
+}
 
+main{
+    padding-bottom: 100px;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+.container section > p, h1{
+    text-align: center;
+}
+
+.float-left{
+    float: left;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /*-----------*/
+
+/* header */
+
+header{
+    padding: 1em 0;
+}
+
+h1{
+    color: #E53170;
+    font-size: 3em;
+    line-height: 3em;
+}
+
+/*--------*/
+
+/*------SECTION 1--------*/
+
+section:first-of-type{
+    margin: 1.5em 0;
+
+}
+
+/*-----------------------*/
+
+
+/*------SECTION 2--------*/
+
+.cards-container{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.card{
+    width: calc(100% / 3 - 20px);
+    background-color: #0F0E17;
+    margin: 0 0 30px 0;
+    box-shadow: 0 0 5px 2px black ;
+}
+
+.card-img{
+    width: 30%;
+}
+
+.card-info{
+    padding: 2%;
+}
+
+
+
+.card-info > :not(a){
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card-info > a{
+    text-decoration: none;
+    color: #49B5CD;
+}
+
+.cards-container > .card:nth-of-type(3n+2){
+    margin: 0 30px;
+}
+
+/*-----------------------*/
+
